@@ -54,7 +54,13 @@ function sessions(data) {
       contacts: session.contacts,
       room: session.room,
       sessionID: session.sessionID,
-      offeringID: session.offeringID
+      offeringID: session.offeringID,
+      floor: session.floor,
+      xPoint: session.xPoint,
+      yPoint: session.yPoint,
+      offeringCount: session.offeringCount,
+      istScheduleID: session.istScheduleID,
+      paperTitle: session.paperTitle
     }
   });
   fs.writeFile(out, JSON.stringify(relevant), function(err) {
